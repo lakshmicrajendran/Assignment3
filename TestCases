@@ -1,0 +1,233 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AwesomeCalculator;
+using NUnit.Framework;
+
+
+namespace AwesomeCalcTests
+
+{
+    [TestFixture]
+    class CalcTests
+    {
+        [Test]
+        public void GetAddition_Input5point6and4point1_Returns9point7()
+        {
+
+            //Arrange
+            double input1 = 5.6;
+            double input2 = 4.1;
+
+            double expectedResult = input1 + input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetAddition_Input12point5and4point5_Returns17point0()
+        {
+
+            //Arrange
+            double input1 = 12.5;
+            double input2 = 4.5;
+
+            double expectedResult = input1 + input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetAddition_Input5point3and9point7_Returns15point0()
+        {
+
+            //Arrange
+            double input1 = 5.3;
+            double input2 = 9.7;
+
+            double expectedResult = input1 + input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetSubtraction_Input5point7and2point7_Returns3point0()
+        {
+
+            //Arrange
+            double input1 = 5.7;
+            double input2 = 2.7;
+
+            double expectedResult = input1 - input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetSubtraction_Input10point5and8point0_Returns2point5()
+        {
+
+            //Arrange
+            double input1 = 10.5;
+            double input2 = 8.0;
+
+            double expectedResult = input1 - input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetSubtraction_Input2point6and2point0_Returns1point6()
+        {
+
+            //Arrange
+            double input1 = 2.6;
+            double input2 = 1.0;
+
+            double expectedResult = input1 - input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input25point0and5point0_Returns125point0()
+        {
+
+            //Arrange
+            double input1 = 25.0;
+            double input2 = 5.0;
+
+            double expectedResult = input1 * input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input2point5and2point4_Returns6point0()
+        {
+
+            //Arrange
+            double input1 = 2.5;
+            double input2 = 2.4;
+
+            double expectedResult = input1 * input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input5point0and12point2_Returns61point0()
+        {
+
+            //Arrange
+            double input1 = 5.0;
+            double input2 = 12.2;
+
+            double expectedResult = input1 * input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetDivision_Input12point2and2point0_Returns6point1()
+        {
+
+            //Arrange
+            double input1 = 12.2;
+            double input2 = 2.0;
+
+            double expectedResult = input1 /  input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetDivision_Input6point5and2point0_Returns3point25()
+        {
+
+            //Arrange
+            double input1 = 6.5;
+            double input2 = 2.0;
+
+            double expectedResult = input1 / input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetDivision_Input8point0and4point0_Returns2point0()
+        {
+
+            //Arrange
+            double input1 = 8.0;
+            double input2 = 4.0;
+
+            double expectedResult = input1 / input2;
+
+            Calc calcTest = new Calc(input1, input2);
+
+            //Act
+            double actualResult = calcTest.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+    }
+}
